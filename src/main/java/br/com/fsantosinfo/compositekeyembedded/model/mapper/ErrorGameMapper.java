@@ -12,11 +12,11 @@ import br.com.fsantosinfo.compositekeyembedded.model.pk.ErrorGamePK;
 @Mapper(componentModel = "spring")
 public interface ErrorGameMapper {
 
-    ErrorGameResponseDTO toResponseDTO(ErrorGame errorGameModel);
+    ErrorGameResponseDTO toErrorGameResponseDTO(ErrorGame errorGameModel);
 
-    ErrorGame toModel(ErrorGameRequestDTO errorGameRequestDTO);
+    ErrorGame toErrorGameModel(ErrorGameRequestDTO errorGameRequestDTO);
 
-    ErrorGamePK toPkModel(ErrorGamePKRequestDTO pkRequestDTO);
+    ErrorGamePK toPKModel(ErrorGamePKRequestDTO pkRequestDTO);
 
-    ErrorGamePKResponseDTO toPkResponseDTO(ErrorGamePK errorGamePkModel);
+    ErrorGamePKResponseDTO toPKResponseDTO(ErrorGamePK errorGamePkModel);
 }
