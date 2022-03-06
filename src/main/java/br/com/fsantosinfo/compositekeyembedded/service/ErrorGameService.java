@@ -14,7 +14,7 @@ public interface ErrorGameService {
 
     ErrorGame findByCompositeKey(ErrorGamePK errorGameId);
 
-    Page<ErrorGameResponseDTO> findErrorsByGame(int size, int page, Long gameId, String gamePlatform);
+    Page<ErrorGameResponseDTO> findErrorsByGame(int pageSize, int pageNumber, Long gameId, String gamePlatform);
 
     Page<ErrorGameResponseDTO> convertPageModelToPageResponseDto(PageRequest pageRequest,
             Page<ErrorGame> pageErrorGameModel);
